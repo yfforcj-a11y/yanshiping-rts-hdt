@@ -1,0 +1,20 @@
+version: 1.0.0
+paths:
+  data_root: ../data/
+  output_root: ../outputs/
+  dod_0p1m: ../data/dod_0p1m/
+  borehole_temperature: ../data/borehole_temperature/
+  gnss: ../data/gnss/
+  crack_meter: ../data/crack_meter/
+  site_catalog: ../data/site_catalog.csv
+  era5: ../data/era5/
+parameters:
+  dod_sign_convention: later-minus-earlier
+  raster_resolution_m: 0.1
+  scm_probability_threshold: 0.50
+  random_seed_scm: 2025
+  random_seed_pinn: 42
+notes:
+  - Copy this file to config.yaml for local overrides.
+  - Keep data and outputs outside the Git repository.
+  - Do not replace manuscript parameters unless conducting a documented sensitivity analysis.

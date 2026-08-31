@@ -1,0 +1,48 @@
+{
+  "manifest_version": "1.0.0-public",
+  "authoritative_data_sources": {
+    "project_root": {"path": "."},
+    "code_root": {"path": "scripts"},
+    "data_root": {"path": "../data"},
+    "standardized_dod_root": {"path": "../data/dod_0p1m"},
+    "lod95_root": {"path": "../outputs/LOD95"},
+    "era5_root": {"path": "../data/era5"},
+    "era5_temperature_csv": {"path": "../data/era5/era5_temperature.csv"},
+    "era5_precipitation_csv": {"path": "../data/era5/era5_precipitation.csv"},
+    "meteorology_nfactor_root": {"path": "../outputs/n_factor_outputs/0"},
+    "temperature_monitoring_root": {"path": "../data/borehole_temperature"},
+    "gnss_lfj_root": {"path": "../data"},
+    "paper_results_root": {"path": "../outputs/paper_results"}
+  },
+  "deprecated_sources": {},
+  "output_roots": {
+    "main_output_root": "../outputs",
+    "paper_results_root": "../outputs/paper_results"
+  },
+  "filename_patterns": {
+    "standardized_dod_tif": "*.tif",
+    "standardized_dod_las": "*.las",
+    "lod95": "LOD95_*.tif",
+    "lod95_significant": "LOD95_sig_*.tif",
+    "era5_temperature": "*temperature*.csv",
+    "era5_precipitation": "*precipitation*.csv",
+    "borehole_temperature": "yanshiping_rts_borehole_*.csv",
+    "gnss_monitoring": "yanshiping_rts_gnss_*.csv",
+    "lfj_monitoring": "yanshiping_rts_crack_meter_*.csv",
+    "nfactor_degree_days": "Ta_Ts_degree_days_*.csv"
+  },
+  "validation_rules": {
+    "must_exist": [
+      "data_root",
+      "standardized_dod_root",
+      "temperature_monitoring_root",
+      "gnss_lfj_root"
+    ],
+    "expected_file_counts": {
+      "standardized_dod_tif": 6,
+      "borehole_temperature": 5,
+      "gnss_monitoring": 3,
+      "lfj_monitoring": 2
+    }
+  }
+}

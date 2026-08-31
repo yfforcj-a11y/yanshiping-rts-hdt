@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived software release."
+title: "An Earth observation-enabled hybrid digital twin framework for event-scale thermo-erosional evolution of a retrogressive thaw slump"
+type: software
+version: 1.0.0
+date-released: 2026-08-31
+license: MIT
+doi: "10.5281/zenodo.22210859"
+authors:
+  - given-names: Fan
+    family-names: Yu
+  - given-names: Jing
+    family-names: Luo
+  - given-names: Fujun
+    family-names: Niu
+  - given-names: Zhanju
+    family-names: Lin
+  - given-names: Chunqing
+    family-names: Ma
+  - given-names: Xin
+    family-names: Ju
+  - given-names: Chenglong
+    family-names: Jiao
+  - given-names: Bingyan
+    family-names: Li
+  - given-names: Yanhu
+    family-names: Mu
+  - given-names: Minghao
+    family-names: Liu
+  - given-names: Guoan
+    family-names: Yin
+  - given-names: Zeyong
+    family-names: Gao
+  - given-names: Xiaolong
+    family-names: Zhao
+repository-code: "https://github.com/yfforcj-a11y/yanshiping-rts-hdt"
+abstract: >-
+  Reproducibility code for an Earth observation-enabled hybrid digital twin
+  study of event-scale thermo-erosional evolution at the Yanshiping
+  retrogressive thaw slump.
+keywords:
+  - retrogressive thaw slump
+  - UAV-LiDAR
+  - DEM of Difference
+  - permafrost
+  - hybrid digital twin
+  - physics-informed neural network
